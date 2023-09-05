@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts, colours, measurements</title>
+
+    <style>
+        p {
+            font-size: 16px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-style: italic;
+            font-weight: bold;
+            line-height: 1.3;
+            text-align: start;
+            box-shadow: 4px 4px 2px rebeccapurple;
+            /* direction: rtl; */ /* ltr is default */
+            /* font: 400 16px monospace; */
+        }
+
+        p > span {
+            /* vertical-align targets inline elements specifically, not block elements */
+            vertical-align: sub;
+            text-decoration: wavy underline red;
+            letter-spacing: 1.2px;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: #AF0055; /* #RRGGBB */
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus non provident assumenda laudantium aut repellendus impedit ut quas corrupti aliquid nemo veritatis nam dolor, molestiae ipsum illum veniam odit saepe?
+        Lorem ipsum dolor <span>sit amet</span> consectetur, adipisicing elit. Nostrum, beatae distinctio? Atque, eum eveniet. In ab impedit reiciendis aperiam rerum.</p>
+
+    <div class="box"></div>
+</body>
+</html>
